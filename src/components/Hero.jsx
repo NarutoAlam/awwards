@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import BentoTilt from "./BentoTilt";
+import Search from "./Search";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -119,6 +120,8 @@ const Hero = () => {
           onLoadedData={handleVideoLoad}
           />
 
+      
+
           <video
           autoPlay
           loop
@@ -138,12 +141,12 @@ const Hero = () => {
             <p className="mb-5 max-w-64 font-robert-regular text-blue-100"> Enter the Metagame Layer <br /> Unleash the play Economy</p>
             <Button id="watch-trailer" title="Watch Trailer" leftIcon={<TiLocationArrow />} containerClass="bg-yellow-300 flex-center gap-1"/>
           </div>
+          {/* <Search /> */}
         </div> 
       </div>
       <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
           G<b>a</b>ming
         </h1>
-
     </div>
   )
 }
